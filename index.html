@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head> 
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <form action="#" name="FormFill" onsubmit="return validation()" method="post">
+                <h1>Sign Up</h1>
+                <p id="res1" class="error"></p>
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <p id="res2" class="error"></p>
+                <div class="input-box">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <p id="res3" class="error"></p>
+                <div class="input-box">
+                    
+                    <input type="password" name="password" placeholder="Password" id="password">
+                    <i class='bx bxs-show password-toggle' onclick="togglePassword('password', this)"></i>
+                </div>
+                <p id="res4" class="error"></p>
+                <div class="input-box">
+                    
+                    <input type="password" name="cPassword" placeholder="Confirm Password" id="cPassword">
+                    <i class='bx bxs-show password-toggle' onclick="togglePassword('cPassword', this)"></i>
+                </div>
+                <p id="res5" class="error"></p>
+                <div class="button">
+                    <input type="submit" class="btn" value="Sign Up">
+                </div>
+                <div class="group">
+                    <span><p>Already have an account?</p></span>
+                    <span><a href="login.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
